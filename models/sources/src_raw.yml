@@ -2,8 +2,14 @@ version: 2
 
 sources:
   - name: raw
-    description: "Raw inputs for the project. In this repo they are loaded via dbt seeds (stand-in for warehouse ingestion)."
+    description: "Raw inputs for the project. In this repo they are seeded but represent upstream ingestion tables."
     schema: main
     tables:
       - name: claim_lines
-        description: "Claim line records (seeded)."
+        description: "Claim line records (raw input)."
+
+      - name: denials
+        description: "Denial events at the claim line level."
+
+      - name: appeals
+        description: "Appeal records tied to denials."

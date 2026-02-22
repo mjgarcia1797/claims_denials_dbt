@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_denials
+    columns:
+      - name: denial_id
+        tests:
+          - not_null
+          - unique
+
+      - name: claim_line_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_claim_lines')
+              field: claim_line_id

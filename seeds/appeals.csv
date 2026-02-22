@@ -1,0 +1,4 @@
+appeal_id,denial_id,appeal_date,appeal_outcome,appeal_resolution_date,overturned_amount
+A1,D1,2024-01-05,Approved,2024-01-10,150
+A2,D4,2024-01-18,Denied,2024-01-25,0
+A3,D6,2024-01-28,Approved,2024-02-02,250

@@ -1,0 +1,8 @@
+denial_id,claim_line_id,denial_code,denial_reason,denial_date,initial_denial_amount
+D1,2,CO45,Charge exceeds fee schedule,2024-01-03,150
+D2,4,CO50,Non-covered service,2024-01-07,220
+D3,7,CO97,Procedure inconsistent with diagnosis,2024-01-12,160
+D4,10,CO16,Missing information,2024-01-16,170
+D5,12,CO50,Non-covered service,2024-01-20,140
+D6,16,CO45,Charge exceeds fee schedule,2024-01-26,250
+D7,20,CO97,Procedure inconsistent with diagnosis,2024-01-31,170

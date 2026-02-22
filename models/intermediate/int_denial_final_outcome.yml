@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: int_denial_final_outcome
+    description: "Denial-level final outcome after considering appeals, including remaining denied amount (net revenue at risk)."
+    columns:
+      - name: denial_id
+        tests:
+          - not_null
+          - unique
+
+      - name: claim_line_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_claim_lines')
+              field: claim_line_id
+
+      - name: final_outcome
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Denied - No Appeal', 'Overturned', 'Denied - Appeal Upheld']
+
+      - name: final_denied_amount
+        tests:
+          - not_null

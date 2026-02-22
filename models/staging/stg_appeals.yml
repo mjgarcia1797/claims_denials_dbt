@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_appeals
+    columns:
+      - name: appeal_id
+        tests:
+          - not_null
+          - unique
+
+      - name: denial_id
+        tests:
+          - not_null
