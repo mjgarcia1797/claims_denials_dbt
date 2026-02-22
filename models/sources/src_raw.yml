@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Raw inputs for the project. In this repo they are loaded via dbt seeds (stand-in for warehouse ingestion)."
+    schema: main
+    tables:
+      - name: claim_lines
+        description: "Claim line records (seeded)."

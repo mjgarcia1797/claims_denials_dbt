@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_claim_lines
+    description: "Cleaned claim line level data"
+    columns:
+      - name: claim_line_id
+        tests:
+          - not_null
+          - unique
+
+      - name: claim_id
+        tests:
+          - not_null
+
+      - name: payer
+        tests:
+          - not_null
