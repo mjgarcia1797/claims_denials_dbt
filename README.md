@@ -96,7 +96,7 @@ dbt build
 dbt snapshot
 dbt docs generate
 dbt docs serve
-\```
+```
 
 ---
 
