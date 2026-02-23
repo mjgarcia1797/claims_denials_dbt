@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fct_denial_resolution
+    description: "Denial-level fact table with full claim context and final appeal outcome."
+    columns:
+      - name: denial_id
+        tests:
+          - not_null
+          - unique
+
+      - name: claim_line_id
+        tests:
+          - not_null
+
+      - name: payer
+        tests:
+          - not_null
+
+      - name: final_outcome
+        tests:
+          - not_null

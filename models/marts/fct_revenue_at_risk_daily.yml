@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: fct_revenue_at_risk_daily
+    description: "Daily payer-level aggregation of denied amount, overturned amount, and remaining revenue at risk."
+    columns:
+      - name: as_of_date
+        tests:
+          - not_null
+      - name: payer
+        tests:
+          - not_null
+      - name: net_revenue_at_risk
+        tests:
+          - not_null
